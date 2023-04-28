@@ -1,0 +1,290 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,roman]{moderncv}
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and
+%\moderncvtheme[blue]{casual}
+% roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are
+% using
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % re6uired when changes are made
+% to page layout lengths
+\linespread{0.81}
+% personal data
+\firstname{Aritra}
+\familyname{Sengupta}
+\title{Curriculum Vitae}
+\address{600 Rainbow Dr. \\Apt 192}{Mountain View, CA-94041}
+
+\mobile{(+1) 614-477-9964}
+% \phone{(+98) 381 333 66 56}
+% \fax{312 996 1429}
+\email{\\sengupta.25@buckeyemail.osu.edu
+, aritras@amazon.com}
+\extrainfo{\weblink[\textbf{link-to-webpage}]{https://web.cse.ohio-state.edu/~sengupta.25}}
+\extrainfo{US permanent resident}
+%\email{\\sengupta.25@buckeyemail.osu.edu}
+%\email{sengupta.25@osu.edu}
+%\extrainfo{PhD candidate at Ohio State University}
+%\extrainfo{\url{http://web.cse.ohio-state.edu/~sengupta}}
+% \photo[80pt]{me.jpg}
+
+%\quote{"I slept and dreamt that life was joy. I awoke and saw that life was service. I acted and behold, service was joy." -- Rabindranath %Tagore}
+
+%\nopagenumbers{}
+
+%-------------------------------------------------------------------------------
+%            content
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+% \section{Objective}
+% \cvitem{}{Obtaining an internship position that utilizes my skills and experience in programming languages}
+
+\section{Interests}
+\cvline{}
+{Program analysis (static and dynamic), runtime systems, programming models, parallel and distributed systems/systems software, software and hardware transactional memory, compilers, synchronization schemes, code optimization.}
+
+\cvline{}
+{I enjoy desigining and implementing analyses and runtimes across the software stack considering tradeoffs between performance and correctness.}
+
+\section{Education}
+\cventry{9/2011--5/2017}
+{Doctor of Philosophy (Ph.D.)}
+%\cvline{}{\texbf{Advisor}: Michael D. Bond.}
+{Department of Computer Science and Engg.}
+{Ohio State University}
+{Columbus, Ohio}
+{}
+\cvline{}{\textbf{\emph{Major:}} Computer Science and Engg.}
+\cvline{}{\textbf{\emph{Advisor:}} Prof. Michael D. Bond.}
+\cvline{}{\textbf{\emph{GPA:}} 3.95/4}
+%\cvline{}{\textbf{\emph{Date of graduation:}} May 7th, 2017.}
+\cvline{}{}
+%\cventry{9/2011--5/2015}
+%{Master of Science (MS)}
+%{Department of Computer Science and Engg.}
+%{Ohio State University}
+%{Columbus, Ohio}
+%{}
+%\cvline{}{\textbf{\emph{Major:}} Computer Science and Engg.}
+%\cvline{}{\textbf{\emph{Advisor:}} Prof. Michael D. Bond.}
+
+%{(\url{http://www.cse.ohio-state.edu})}
+
+ \cventry{6/2004--6/2008}
+{Bachelor of Technology (B.Tech)}
+{School of Computer Science and Engineering, Vellore Institute of Technology University}
+{Vellore}{India}
+{}
+\cvline{}{\textbf{\emph{Major:}} Computer Science and Engg.}
+\cvline{}{\textbf{\emph{GPA:}} 9.29/10}
+%{(\url{http://www.vit.ac.in})}
+%  Publications from a BibTeX file
+\cvline{}{}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\section{Other Publications}
+
+\cvline{}{\textbf{Aritra Sengupta}. Efficient Support for Strong Semantics in Transactional and Non-transactional programs. \emph
+{Appeared in ACM Student Research Competition, OOPSLA 2015. SPLASH Companion, 2015.} \weblink[\underline{Link}]{http://dl.acm.org/citation.cfm?id=2815372}}
+
+\cvline{}{\textbf{Aritra Sengupta}, Swarnendu Biswas, Minjia Zhang, Michael D. Bond, Milind Kulkarni. Hybrid Static-Dynamic Analysis for Statically Bounded Region Serializability (extended technical report based on ASPLOS 2015 paper). \emph
+{OSU-CISRC-11/12-TR18, updated January, 2015.} \weblink[\underline{Link}]{http://web.cse.ohio-state.edu/~sengupta/EnfoRSer-ASPLOS-2015-tech-report.pdf}}
+
+\cvline{}{\textbf{Aritra Sengupta}, Swarnendu Biswas, Minjia Zhang, Michael D. Bond, Milind Kulkarni. EnfoRSer: Hybrid Static--Dynamic Analysis for Region Serializability (\emph{The design includes a serializability enforcement technqiue not present in the above technical report}). \emph
+{OSU-CISRC-11/12-TR18, updated November, 2013.} \weblink[\underline{Link}]{http://web.cse.ohio-state.edu/~sengupta/EnfoRSer-tr-RS-ME.pdf}}
+
+\section{Poster Presentations}
+\cvlistitem{}{Presented work on \emph{region serializability enforcement using commodity hardware transactional memory} at \emph{ACM Student Research Competition, OOPSLA 2015.}}
+\cvlistitem{}{Presented work on \emph{sequential consistency enforcement in software} at \emph{ACM Student Research Competition, PLDI 2013.}}
+
+\section{Experience}
+\cventry{8/2019--Present}
+{Applied Scientist}
+{Amazon AWS, Automated Reasoning Group}
+{Cupertino}{California}{}
+\cvline{--} Enforcing correctness properties at scale on AWS services.
+
+\cventry{7/2017--Present}
+{Senior Research Engineer}
+{Samsung Research America}
+{Mountain View}{California}
+{}
+\cvline{--} Distributed in-home machine learning inference.
+\cvline{--}
+{Built a reliable IoT application execution system that provides strong guarantees, e.g. keeping soft states/app states consistent with hard states/device states.
+ A simple programming abstraction allows the IoT developer to express consistency requirements which is respected by our runtime. The runtime is built atop Azure serverless functions
+ executing over Cosmos DB.}
+\cvline{--}
+{Proposed a transactional framework to provide low-latency and serializable execution of smart-home applications. Development of a static analysis framework to understand the interaction
+of smart-home applications operating on shared software states and physical actuators. Transactions in the proposed framework read speculative soft states from the hub instead of physical sensors
+and actuators to derive a consistent order before issuing actual physical actuations on the devices.}
+\\
+\cventry{9/2011--5/2017}
+{Graduate Research Associate}
+{Computer Science and Engineering Department, Ohio State University}
+{Columbus}{Ohio}{}
+\cvline{}{\textbf{\emph{Mentor:}} Michael D. Bond}
+\subsection{}
+\cvline{--}{Designed and implemented large concurrent systems considering tradeoffs between performance and correctness across the software stack.}
+\cvline{--}{Built analysis on top of a default runtime and extracted performance considering several avenues of optimization in design and implementation [ASPLOS 2015, PPPJ 2015,  CGO 2017, PPOPP 2016, OOPSLA 2013].}
+\cvline{--}
+{Designed and implemented low-overhead techniques using hybrid static---dynamic analysis to enforce bounded region serializability. The techniques require compiler transformations, code generation, implementation of log-based and register-based transactional memory, efficient compiler analyses, etc.[ASPLOS 2015, PPPJ 2015, CGO 2017].}
+\cvline{--}
+{Developed static analysis to eliminate redundant  instrumentation, demarcate regions of code, generate dependence
+graphs for efficient code generation during JIT compilation [ASPLOS 2015, OOPSLA 2013].}
+\cvline{--}
+{Designed and implemented dynamic analysis to detect shared memory bugs including sequential consistency violations and atomicty violations [ISMM 2016, ASPLOS 2015].}
+\cvline{--}
+{Designed and Implemented hybrid synchronization techniques (per-access lock, per-region lock) to enable low-overhead enforcement of a strong memory model. Implementation of pessimistic static locks and optimistic dynamic locks [PPPJ 2015].}
+\cvline{--}
+{Leveraged hardware transactional memory (HTM), conditional code generation, and control-theory algorithms to enforce a strong, always-on and practical memory consistency model [CGO 2017].}
+\cvline{--}
+{Combined optimistic and pessimistic synchronization to develop a region--serializability enforcer [PPoPP 2016].}
+\cvline{--}{Developed efficient and practical instrumentation schemes, implementing and modifying several parts of a JVM including baseline compiler, optimizing compiler, Java locking protocols, garbage collection features etc. [ASPLOS 2015, PPPJ 2015, ISMM 2016, PPOPP 2016, OOPSLA 2013, PLDI 2014, CGO 2017].}
+%{Research at the \emph{PLaSS} group involves development of analyses inside the JVM to solve concurrency issues in multi-threaded programs. In particular, my past research projects use a combination of static and dynamic analysis to
+%enforce region serializability (RS) in software. This is the first technique to provide RS on commodity systems at a reasonable overhead. In another published work we used a combination of per-object locks and static locks in statically bounded regions to serialize the regions and enforce
+%a strong memory model. Currently I am working on devising techniques to implement a memory model, stronger than the state of the art, applicable
+%for programs using locks, transactional memory or both executed by a single runtime. There is another ongoing work that enforces this memory model using Intel's hardware transactional memory (Restricted transactional memory or RTM).}
+{}
+\cventry{5/2016--8/2016}
+{Summer Research Intern}
+{Microsoft Research}
+{Redmond, Seattle}{USA}
+{}
+\cvline{}{\textbf{\emph{Mentors:}} Kathryn S. McKinley, Ricardo Bianchini, Sameh Elnikety, Yuxiong He.}
+\subsection{}
+\cvline{--}
+{Research on designing dynamic and adaptive scheduling techniques for latency sensitive server systems. Design and implementation of
+an online technique to detect memory interference  amongst co-scheduled requests, using hardware performance counters, to automatically manage the server's scheduling, concurrency and intra-request paralellism in order to increase server utilization and reduce tail-latency.}
+
+%\cventry{5/2015--8/2015}
+%{Summer Research Intern}
+%{Huawei Research}
+%{Santa Clara}{CA, USA}
+%\cvline{}{\textbf{\emph{Mentors:}} Brice Dobry, Peng Wu}
+%\subsection{}
+%\cvline{--}
+%{Evaluating different runtimes via benchmarking; comparing performance and scalability in order to design concurrency primitives.}
+
+%\cventry{1/2011--7/2011}
+%{Systems Engineer}
+%{Tata Consultancy Services (TCS)}
+%{Kolkata}{India}
+%{Developments in Core Java and Java Struts}
+%\cventry{8/2008--12/2010}
+%\vspace{6em}
+
+
+\cventry{8/2008--7/2011}
+{Systems Engineer}
+{Tata Consultancy Services (TCS)}
+{}{India}
+{Migration of code in legacy systems to C/C++, Interfacing C libraries with COBOL. Developments in core Java.}
+
+\section{Service}
+\cvlistitem{Program committee member for OOPSLA 2021.}
+\cvlistitem{Session chair, OOPSLA 2020.}
+\cvlistitem{Program committee member for OOPSLA 2020.}
+\cvlistitem{Reviewer CONCUR 2020.}
+\cvlistitem{Reviewer for journal: IEEE Transactions on Software Engineering(TSE).}
+\cvlistitem{Program committee member for IPDPS 2019.}
+\cvlistitem{External review committee (ERC) member for ASPLOS 2019.}
+\cvlistitem{Reviewer for PACT 2018.}
+\cvlistitem{Reviewer for journal: ACM Transactions on Architecture and Code Optimization(TACO).} 
+\cvlistitem{Reviewer for journal: IEEE Transactions on Parallel and Distributed Systems (TPDS).}
+\cvlistitem{Reviewer for journal: Concurrency and Computation: Practice and Experience.}
+\cvlistitem{Member of EuroSys 2018 shadow program committee.}
+\cvlistitem{Member of ASPLOS 2018 shadow program committee.}
+\cvlistitem{Artifact evaluation committee member for PPoPP 2017/CGO 2017.}
+\cvlistitem{Artifact evaluation committee member for PPoPP 2016/CGO 2016.}
+\cvlistitem{Subreviewer for  PLDI 2017.}
+\cvlistitem{Subreviewer for PACT 2017.}
+
+\section{Mentoring experience}
+%\cventry{--}{Interns Mentored}{}{}{}{}
+\cvlistitem{Mentored summer 2021 research intern at AWS CodeGuru---Ali Nowraiz Khan, Ph.D. student at U.C. Riverside.}
+\cvlistitem{Mentored summer 2020 research intern at AWS CodeGuru---Ali Nowraiz Khan, Ph.D. student at U.C. Riverside.}
+\cvlistitem{Mentored summer 2018 research intern at Samsung Research---Cesar S. Stuardo, Ph.D. student at U.Chicago.}
+
+
+\section{Honors and Awards}
+\cvline{7/2019}
+{Awarded the Best Paper Award for Transactuation at USENIX ATC 2019.}
+\cvline{2/2017}
+{Awarded NSF travel grant for presenting at CGO 2017 in Austin, USA} 
+\cvline{3/2015}
+{Awarded NSF travel grant for presenting at ASPLOS 2015 in Istanbul, Turkey.}
+\cvline{2011-2012}
+{Awarded the prestigious “University Fellowship”, graduate student fellowsip, Ohio State University.}
+%\cvline{4/2010}
+%{Secured “Star of the Month” award via \emph{TCS Gems} as recognition of contribution to strategy,
+%design, and implementation of a language migration project, undertaken by Tata
+%Consultancy Services, India.}
+\cvline{11/2008}{Secured “Initial Learning Program Top Performer” award in the first phase of
+training at Tata Consultancy Services, India.}
+\cvline{2006-2008}{Awarded merit certificate and scholarship  in three consecutive years  2006, 2007, 2008 for  academic 
+performance at Vellore Institute of Technology University, Vellore, India.}
+\cvline{2004}{Awarded  merit  certificate for academic performance in  Physics,  Chemistry  and
+Mathematics in Indian School Certificate Examination.}
+%\\\\
+\section{Technical skills}
+%\subsection{}
+\cvline{}{\textbf{\emph{Design and implemenetation:}}} 
+{Design and implementation of large concurrent systems on single node and on distributed platforms. Strong expertise in transactional system design.}
+\cvline{}{\textbf{\emph{Concurrent systems, compilers, JVM, and runtime:}}} 
+{Nearly six years of experience in designing and developing efficient runtime mechanisms for concurrency in a managed runtime (JVM- Jikes RVM) including but not limited to static and dynamic analysis, programming models, memory models, software and hardware transactional memory, code generation, compiler transformations, efficient synchronization schemes, performance engineering in the runtime etc.}
+\cvline{}{\textbf{\emph{Languages and scripting:}}}
+\cvline{  --}{Java, C/C++, Python}
+\cvline{  --}{Asynchronous programming using Node.js---Javascript.}
+\cvline{}{\textbf{\emph{Distributed Cloud Services:}}}
+\cvline{  --}{Serverless functions, e.g. Microsoft Azure functions.}
+\cvline{  --}{Document DB, e.g. Azure Cosmos DB.}
+\cvline{}{\textbf{\emph{Parallel programming and code analysis frameworks, libraries, runtime:}}}
+\cvline{  --}{OpenMP parallel programming model.}
+\cvline{  --}{ROSE compiler framework, Soot: a Java optimization framework.}
+\cvline{  --}{Hardware transactional memory: Intel TSX.}
+\cvline{  --}{Concurrency libraries: Intel TBB.}
+\cvline{}{\textbf{\emph{Benchmarks:}}}
+\cvline{  --}{DaCapo, Java Grande, STAMP.}
+\cvline{}{\textbf{\emph{Machine learning:}}}
+\cvline{  --}{Basic knowledge of logistic regression, neural networks, and deep learning.}
+\cvline{}{\textbf{\emph{Tools:}}}
+\cvline{  --}{Linux perf, Xperf, Intel PCM, PAPI, Chord and more}
+
+\section{Selected Projects}
+\cvlistitem{\emph{Building Reliable Smart-home Applications with Transactuation:}}
+Building Smart-home applications is hard with the inherent inconsisteny between operations on devices and application states due to temporary failures such as message loss. This work
+proivdes a programming abstraction to program Smart-home apps such that the system automatically detects inconsistencies between operations on devices and on app states. The systems
+corrects itself or notifies the user to mitigate the problem. The system is built with serverless functions running on a distributed key-value store.
+
+\cvlistitem{\emph{Hybrid Static-Dynamic Analysis to Enforce Strong Program Semantics:}}
+This work introduces a novel memory consistency model and demonstartes its ability to eliminate several memory consistency and concurrency bugs at low overheads. The runtime system enforces serializability of compiler demarcated regions of code using runtime perturbation and strong compiler transformations. The atomic regions ensure sequential consistency and tolerates several violations of atomicity leading to a strong memory model. The regions are statically and dynamically bounded to generate efficient code that enforces region serializability at run-time.
+\weblink[\underline{\textbf{Link to code}}]{https://sourceforge.net/p/jikesrvm/research-archive/48}
+
+\cvlistitem{\emph{Hybrid Synchronization to Enforce a Strong Memory Model for Java:}}
+Enforcing serializability of compiler demarcated regions provides sequential consistency and atomicity of bounded regions. However, to enforce
+such semantics in software, instrumentation with dynamic locks is required at every memory access leading to high instrumentation overhead. This work provides an alternative synchronization mechanism that uses a single static lock. A static lock is favorable for low-conflicting code regions and a dynamic lock is favorable for precise conflict detection. A run-time profiling technique and a cost-benefit model effectively selects the right synchronization for a region. This hybridized instrumentation scheme enforces strong semantics at low overhead.
+\weblink[\underline{\textbf{Link to code}}]{https://sourceforge.net/p/jikesrvm/research-archive/50}
+
+\cvlistitem{\emph{Efficient Dynamically Bounded Region Serializability with Hardware Transactions:}}
+Statically bounded region serializability (SBRS) is a strong memory model but incurs an overhead of 25-35\% when implemented in software. This work uses commodity hardware transactional memory (HTM) to enforce SBRS. However, counter-intuitively we find that HTM incurs an overhead of 180\%, several times more than software. The start-up and tear-down cost of HTM transactions is the root of the overhead. This work introduces a novel control-theoretic approach to amortize per-transaction cost by merging several regions into a single transaction; and demonstrates its efficiency in overhead over prior work.\weblink[\underline{\textbf{Link to code}}]{https://sourceforge.net/p/jikesrvm/research-archive/56}
+
+\end{document}
+
